@@ -62,8 +62,8 @@
       })
     },
     deactivated() {
-      this.slider.disable()
-      clearTimeout(this.timer)
+//      this.slider.disable()
+//      clearTimeout(this.timer)
     },
     beforeDestroy() {
       this.slider.disable()
