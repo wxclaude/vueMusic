@@ -9,8 +9,8 @@ const Rank = () => import('components/rank/rank')
 const Search = () => import('components/search/search')
 const SingerDetail = () => import('components/singer-detail/singer-detail')
 const Disc = () => import('components/disc/disc')
-// const TopList = () => import('components/top-list/top-list')
-// const UserCenter = () => import('components/user-center/user-center')
+const TopList = () => import('components/top-list/top-list')
+const UserCenter = () => import('components/user-center/user-center')
 
 export default new Router({
   routes: [
