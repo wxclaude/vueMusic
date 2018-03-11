@@ -9,7 +9,6 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 const axios = require('axios')
 const bodyParser = require('body-parser')
-const cors = require('cors')
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -24,11 +23,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       app.use(bodyParser.urlencoded({extended: true}))
       const querystring = require('querystring')
 
-      app.use(cors({
-        origin:'https://c.y.qq.com/',
-        credentials:true
-      }))
-      axios.defaults.withCredentials = true
       app.get('/api/getDiscList', function (req, res) {
         const url = 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg'
         axios.get(url, {
