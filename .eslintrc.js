@@ -31,6 +31,8 @@ module.exports = {
     'key-spacing': 'off',
     'space-before-function-paren': 'off',
     'padded-blocks': 'off',
-    'space-before-blocks':'off'
+    'space-before-blocks':'off',
+    'quotes':'off',
+    'comma-spacing':'off'
   }
 }
