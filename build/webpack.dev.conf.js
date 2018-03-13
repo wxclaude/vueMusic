@@ -17,6 +17,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devtool: config.dev.devtool,
   // these devServer options should be customized in /config/index.js
   devServer: {
+    disableHostCheck: true,
     before(app) {
       app.get('/api/getDiscList', function (req, res) {
         const url = 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg'
