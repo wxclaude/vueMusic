@@ -6,7 +6,7 @@ import { getUid } from 'common/js/uid'
 const debug = process.env.NODE_ENV !== 'production'
 
 export function getLyric(mid) {
-  const url = debug ? '/api/lyric' : 'wxclaude.xyz/vueMusic/api/lyric'
+  const url = debug ? '/api/lyric' : 'http://wxclaude.xyz/vueMusic/api/lyric'
 
   const data = Object.assign({}, commonParams, {
     songmid: mid,
