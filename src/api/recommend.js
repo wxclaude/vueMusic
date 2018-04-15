@@ -17,7 +17,7 @@ export function getRecommend() {
 }
 
 export function getDiscList() {
-  const url = debug ? '/api/getDiscList' : 'http://123.206.183.119/vueMusic/api/getDiscList'
+  const url = debug ? '/api/getDiscList' : 'http://47.98.122.219/vueMusic/api/getDiscList'
 
   const data = Object.assign({}, commonParams, {
     platform: 'yqq',
@@ -39,7 +39,7 @@ export function getDiscList() {
 }
 
 export function getSongList(disstid) {
-  const url = debug ? '/api/getCdInfo' : 'http://123.206.183.119/vueMusic/api/getCdInfo'
+  const url = debug ? '/api/getCdInfo' : 'http://47.98.122.219/vueMusic/api/getCdInfo'
 
   const data = Object.assign({}, commonParams, {
     disstid,
